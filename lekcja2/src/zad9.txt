@@ -1,0 +1,26 @@
+public class Zadanie9 {
+public static void main(String[] args) {
+char poprawnaLitera = (char)('A' + (int)(Math.random() * 26));
+Scanner scanner = new Scanner(System.in);
+System.out.println("Pomyślałem literę z przedziału od A do Z. Odgadnij ją i wpisz: ");
+ int licznikProb = 1;
+    while (true) {
+        String podanaLiteraRaw = scanner.nextLine();
+        char podanaLitera = podanaLiteraRaw.toUpperCase().charAt(0);
+
+        if (podanaLitera == poprawnaLitera) {
+            System.out.println("Dobrze! Odgadłeś literę " + poprawnaLitera + " w " + licznikProb + " próbach.");
+            break;
+        } else {
+            System.out.println("Źle!");
+            if (podanaLitera < poprawnaLitera) {
+                System.out.println("Liczba jest za niska.");
+            } else {
+                System.out.println("Liczba jest za wysoka.");
+            }
+            System.out.println("Spróbuj jeszcze raz: ");
+            licznikProb++;
+        }
+    }
+}
+}

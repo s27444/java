@@ -1,0 +1,13 @@
+public class Zadanie1 {
+    public static void main(String[] args) {
+        String imie = "Adrian";
+        String nazwisko = "Kemski;
+        String grupa = "5";
+        String kierunek = "Informatyka";
+
+        System.out.println("Imię: " + imie);
+        System.out.println("Nazwisko: " + nazwisko);
+        System.out.println("Grupa: " + grupa);
+        System.out.println("Kierunek: " + kierunek);
+    }
+}

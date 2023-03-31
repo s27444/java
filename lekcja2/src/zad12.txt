@@ -1,0 +1,56 @@
+class Vehicle {
+private int passengers;
+private int fuelcap;
+private double lkm;
+public Vehicle(int passengers, int fuelcap, double lkm) {
+    this.passengers = passengers;
+    this.fuelcap = fuelcap;
+    this.lkm = lkm;
+}
+
+public int getPassengers() {
+    return passengers;
+}
+
+public void setPassengers(int passengers) {
+    this.passengers = passengers;
+}
+
+public int getFuelcap() {
+    return fuelcap;
+}
+
+public void setFuelcap(int fuelcap) {
+    this.fuelcap = fuelcap;
+}
+
+public double getLkm() {
+    return lkm;
+}
+
+public void setLkm(double lkm) {
+    this.lkm = lkm;
+}
+
+public double range() {
+    return fuelcap / (lkm / 100);
+}
+}
+
+public class VehicleProg {
+public static void main(String[] args) {
+Vehicle miniVan = new Vehicle(7, 70, 9.5);
+Vehicle sportsCar = new Vehicle(2, 50, 15.0);
+System.out.println("MiniVan:");
+    System.out.println("Liczba pasażerów: " + miniVan.getPassengers());
+    System.out.println("Pojemność zbiornika paliwa: " + miniVan.getFuelcap() + " litrów");
+    System.out.println("Zużycie paliwa na 100 km: " + miniVan.getLkm() + " l/km");
+    System.out.println("Zasięg przy pełnym zbiorniku: " + miniVan.range() + " km\n");
+
+    System.out.println("Sports Car:");
+    System.out.println("Liczba pasażerów: " + sportsCar.getPassengers());
+    System.out.println("Pojemność zbiornika paliwa: " + sportsCar.getFuelcap() + " litrów");
+    System.out.println("Zużycie paliwa na 100 km: " + sportsCar.getLkm() + " l/km");
+    System.out.println("Zasięg przy pełnym zbiorniku: " + sportsCar.range() + " km");
+}
+}

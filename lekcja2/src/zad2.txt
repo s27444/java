@@ -1,0 +1,22 @@
+public class Zadanie2 {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+ System.out.print("Podaj imię: ");
+    String imie = scanner.nextLine();
+
+    System.out.print("Podaj nazwisko: ");
+    String nazwisko = scanner.nextLine();
+
+    System.out.print("Podaj grupę: ");
+    String grupa = scanner.nextLine();
+
+    System.out.print("Podaj kierunek: ");
+    String kierunek = scanner.nextLine();
+
+    System.out.println("Imię: " + imie);
+    System.out.println("Nazwisko: " + nazwisko);
+    System.out.println("Grupa: " + grupa);
+    System.out.println("Kierunek: " + kierunek);
+}
+}

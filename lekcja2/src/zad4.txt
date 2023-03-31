@@ -1,0 +1,21 @@
+public class Zadanie4 {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+System.out.print("Wprowadź pierwszy napis: ");
+    String napis1 = scanner.nextLine();
+
+    System.out.print("Wprowadź drugi napis: ");
+    String napis2 = scanner.nextLine();
+
+    boolean areEqual = str1.equals(str2);
+
+    System.out.println("napis1: " + str1);
+    System.out.println("napis2: " + str2);
+    System.out.println("napis1 = napis2: " + areEqual);
+    System.out.println("napis1.equals(napis2): " + areEqual);
+
+    scanner.close();
+}
+
+}

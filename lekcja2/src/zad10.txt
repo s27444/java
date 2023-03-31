@@ -1,0 +1,17 @@
+public class Zadanie10 {
+public static void main(String[] args) {
+int podstawa = 2;
+int wykladnik = 0;
+    while (wykladnik <= 14) {
+        double potega = Math.pow(podstawa, wykladnik);
+        long zaokraglonaPotega = Math.round(potega);
+        System.out.println(podstawa + "^" + wykladnik + " = " + zaokraglonaPotega);
+        wykladnik++;
+    }
+}
+}
+
+
+
+
+

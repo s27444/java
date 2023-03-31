@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Zadanie7 {
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+System.out.print("Podaj promień podstawy walca: ");
+    double promien = input.nextDouble();
+
+    System.out.print("Podaj wysokość walca: ");
+    double wysokosc = input.nextDouble();
+
+    double objetosc = 3.14159 * promien * promien * wysokosc;
+
+    System.out.println("Objętość walca wynosi: " + objetosc);
+}
+}

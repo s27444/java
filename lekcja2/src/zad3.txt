@@ -1,0 +1,23 @@
+public class Zadanie3 {
+public static void main(String[] args) {
+short s = 32767;
+int i = 2147483647;
+long l = 9223372036854775807L;
+float f = 3.14f;
+double d = 2.71828d;
+char c = 'a';
+String str = "Hello, World!";
+boolean b = true;
+
+    System.out.println("Default values for primitive types in Java:");
+    System.out.println("short s = " + s);
+    System.out.println("int i = " + i);
+    System.out.println("long l = " + l);
+    System.out.println("float f = " + f);
+    System.out.println("double d = " + d);
+    System.out.println("char c = " + c);
+    System.out.println("String str = " + str);
+    System.out.println("boolean b = " + b);
+}
+
+}
